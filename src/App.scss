@@ -1,0 +1,79 @@
+$max-width: 100%;
+
+#root {
+  max-width: $max-width;
+  margin: auto;
+  padding: 2rem 0;
+  text-align: center;
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3rem 1rem;
+
+    &__record {
+      width: 50%;
+      align-self: center;
+
+      .timer {
+        width: 300px;
+        margin-block: 1.5rem;
+        border: 1px dashed;
+        color: #fff;
+        margin: 2rem auto;
+        font-size: 2rem;
+        font-weight: bold;
+        position: fixed;
+        top: -10px;
+        left: 15%;
+      }
+
+      &__btn {
+        width: inherit;
+        margin: 0 auto;
+        display: flex;
+      }
+    }
+
+    &__preview {
+      flex: 1;
+    }
+
+    .btn {
+      outline: none;
+      height: 3rem;
+      margin-top: 1rem;
+      margin-inline: 1rem;
+      cursor: pointer;
+
+      &--primary {
+        width: 30%;
+      }
+
+      &--secondary {
+        width: 50%;
+      }
+
+      &--permi {
+        width: 30%;
+        margin-block: 2rem;
+      }
+    }
+
+    h2 {
+      margin-block: 1rem;
+      text-align: center;
+    }
+
+    video {
+      width: 80%;
+      height: 400px;
+      object-fit: cover;
+      background: #222121;
+    }
+
+    .divider {
+      margin-inline: 1rem;
+    }
+  }
+}
